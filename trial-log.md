@@ -95,4 +95,11 @@ Entry: `Charge the human instead. He's drained.` — len 39.
   usage row after this run ends).
   FAILED thinking_revised (no file from 2+ write/edit messages) — fixed by this
   revision of trial-log.md (second write to the file), then re-bundle v2 + re-check.
-- Bundle v2 + check v2: (filled after re-run.)
+- Bundle v2: `bundle-2-v2.tar.gz`, 308565 bytes,
+  sha256 `cd57c81c6df65eeb8b4f76bceb9cf487d0f193718ede549004c291e0d4f81d88`
+  (commit 09c3a57, after the trial-log revision above).
+  Check v2: **13 passed, 1 failed, 5 skipped** — thinking_revised now PASSES
+  (trial-log.md from 2 write/edit messages); only thinking_priced still FAILS
+  (0 usage rows — coordinator re-bundles with the usage row after this run ends).
+- Bundle v3: same trial-log, now recording the v2 result (commit below).
+  Check v3: (filled after re-run.)
