@@ -78,4 +78,21 @@ Entry: `Charge the human instead. He's drained.` — len 39.
 
 ## Bundle / check
 
-(TODO — filled after bundle + check run.)
+- Bundle v1: `bundle-2-v1.tar.gz`, 295341 bytes,
+  sha256 `5c66d67ccab80a8fc9f19bceb405919fa932cfeb2b8aeac6f3ce0f454c3a5f81`.
+  Prompt record: handed-off, prompt "Gas semua" (Septian's literal words in the parent
+  session), via "parent coordinator handoff for six-prog-3 entry 2 build", parent
+  session 376c8fb8-b64a-4935-992e-6020acf07739 attached. Bundle warned 0 usage rows
+  (subagent row written only after the run completes — coordinator re-bundles).
+- Check v1 (kit dev, commit 684fab0): **12 passed, 2 failed, 5 skipped**.
+  Passed: competition_open, snapshot (5 files, 7173 bytes), license_osi (MIT),
+  entrypoint (main.ts, node22), transcripts_present, transcripts_recorded,
+  thinking_wellformed, thinking_in_window, thinking_reproduces (83/85 lines, 97.6%),
+  thinking_turns (30), transcripts_run_record, thinking_own_work (83/85).
+  Skipped: strategy_note, committed_secret, thinking_committed, thinking_on_task,
+  thinking_fresh.
+  FAILED thinking_priced (0 usage rows — expected; coordinator re-bundles with the
+  usage row after this run ends).
+  FAILED thinking_revised (no file from 2+ write/edit messages) — fixed by this
+  revision of trial-log.md (second write to the file), then re-bundle v2 + re-check.
+- Bundle v2 + check v2: (filled after re-run.)
